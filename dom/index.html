@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM 조작 예제</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            #container {
+                margin: 20px;
+            }
+            .highlight {
+                background-color: yellow;
+            }
+        </style>
+
+        <!-- Internal JavaScript -->
+        <script>
+            // Internal script: DOM이 로드되었을 때 실행됩니다.
+            // document.addEventListener("DOMContentLoaded", () => {
+            //     const title = document.getElementById("title");
+            //     const description = document.getElementById("description");
+
+            //     // 제목과 설명 텍스트 변경
+            //     title.textContent =
+            //         "DOM Manipulation Example (Internal Script)";
+            //     description.textContent =
+            //         "This page demonstrates DOM manipulation using internal JavaScript.";
+            // });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="title">DOM 조작 예제</h1>
+            <p id="description">
+                이 페이지는 자바스크립트를 사용하여 DOM을 조작하는 예제입니다.
+            </p>
+
+            <div id="list-container">
+                <ul id="item-list">
+                    <li class="item">아이템 1</li>
+                    <li class="item">아이템 2</li>
+                    <li class="item">아이템 3</li>
+                </ul>
+            </div>
+
+            <button id="add-item-btn">아이템 추가</button>
+            <button id="remove-item-btn">아이템 삭제</button>
+            <button id="highlight-item-btn">첫 번째 아이템 강조</button>
+            <button id="highlight-all-btn">모든 아이템 강조</button>
+            <button id="reset-highlight-btn">강조 해제</button>
+
+            <!-- Inline JavaScript -->
+            <!-- <button onclick="alert('Inline script: 버튼이 클릭되었습니다!');">
+                인라인 경고 버튼
+            </button> -->
+        </div>
+
+        <!-- External JavaScript -->
+        <!-- <script src="dom.js"></script> -->
+    </body>
+</html>
